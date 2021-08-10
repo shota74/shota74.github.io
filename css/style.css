@@ -60,11 +60,12 @@ header #logo img {
 
 header h2{
 	padding: 0 20px;
-	font-size: 30px;
+	font-size: 50px;
 	position: absolute;
-	left: 40%;
-	bottom: 50%;	/*文字サイズ*/
-	text-align: center;		/*文字をセンタリング*/
+	bottom: 55%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	left: 0px;
+	width: 100%;
+	text-align: center;
 	letter-spacing: 0.1em;	/*文字間隔を少しだけ広くする指定*/
 			/*背景色*/
 	color: #fff;			/*文字色*/
@@ -72,17 +73,14 @@ header h2{
 }
 header h3{
 	padding: 0 20px;
-	font-size: 13px;
+	font-size: 15px;
 	position: absolute;
-	left:38.5%;
-	bottom: 45%;	/*文字サイズ*/
+	bottom: 50%;	/*文字サイズ*/
+	left: 0px;
+	width: 100%;
 	text-align: center;		/*文字をセンタリング*/
-	letter-spacing: 0.1em;	/*文字間隔を少しだけ広くする指定*/
 			/*背景色*/
 	color: #fff;
-	background: rgba(0,0,0,1);	
-	border: 2px solid #222;	/*枠線の幅、線種、色*/
-	border-radius: 100px;		/*文字色*/
 		/*角を丸くする指定。大きめであれば適当で構いません。*/
 }
 
