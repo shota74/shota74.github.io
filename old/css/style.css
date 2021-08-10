@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------- */
+/* Template#041 Designed by 日影石 https://hikageishi.websozai.jp */
+/* -------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("../img/bg.png") right bottom no-repeat fixed;
+    color: #000;
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    line-height: 2;
+}
+
+/* 全体 */
+.wrapper {
+    background-color: #fff;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-height: calc(100% - 28px);
+    text-align: center;
+    width: 900px;
+}
+
+/* サイトタイトル */
+h1 {
+    font-size: 20px;
+}
+
+h1:before {
+    content: "◆";
+}
+
+h1 a, h1 a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.subtitle {
+    border-bottom: 1px solid #666;
+    color: #666;
+    display: block;
+    font-size: 14px;
+}
+
+/* リンクタグ */
+a {
+    color: #426579;
+}
+
+a:hover {
+    color: #adadad;
+}
+
+/* ヘッダー */
+header {
+    color: #000;
+    height: 100%;
+    padding: 20px 10px;
+    vertical-align: top;
+    width: 30%;
+}
+
+/* メニュー */
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+}
+
+nav li a {
+    border-bottom: 1px solid #000;
+    color: #000;
+    display: block;
+    font-size: 14px;
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+/* メイン */
+main {
+    display: block;
+    line-height: 20px;
+    padding: 20px 10px;
+    text-align: left;
+    width: 70%;
+}
+
+/* 段落 */
+p {
+    padding-bottom: 14px;
+}
+
+/* 中央寄せ */
+.center {
+    text-align: center;
+}
+
+/* 画像 */
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* リンク集 */
+.banner {
+    border: 0;
+    float: left;
+    margin-right: 20px;
+}
+
+/* 見出し */
+h2 {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    font-size: 15px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+h2:before {
+    content: "◆";
+}
+
+h3 {
+    border-left: 7px solid #000;
+    color: #000;
+    font-size: 14px;
+    margin: 20px 0;
+    padding: 5px 8px;
+}
+
+/* 引用 */
+blockquote {
+    background-color: #000;
+    color: #fff;
+    margin: 20px;
+    padding: 20px 10px 10px 20px;
+    position: relative;
+}
+
+/* 装飾ボックス */
+.box {
+    background-color: #666;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    color: #fff;
+    padding: 20px;
+    width: auto;
+}
+
+/* 強調 */
+em {
+    color: #000;
+    font-style: normal;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+strong {
+    background-color: #666;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+/* リスト */
+main ol li {
+    margin-left: 30px;
+}
+
+main ul li {
+    list-style: none;
+    margin-left: 15px;
+}
+
+main ul li:before {
+    content: "◇";
+    font-size: 10px;
+    line-height: 14px;
+    vertical-align: middle;
+}
+
+/* 更新履歴 */
+.new {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    height: 99px;
+    line-height: 2;
+    margin: 10px 0;
+    overflow: auto;
+    padding: 5px;
+}
+
+.new dt {
+    border-bottom: 1px solid #000;
+    float: left;
+    font-weight: bold;
+    width: 110px;
+}
+
+.new dd {
+    border-bottom: 1px solid #000;
+    margin-left: 120px;
+}
+
+.new dt:last-child, .new dd:last-child {
+    border-bottom: 0;
+}
+/* メールフォーム */
+form {
+    text-align: center;
+}
+
+textarea {
+    border: 1px solid #000;
+    font-size: 15px;
+    height: 150px;
+    margin: 5px 0;
+    max-width: 100%;
+    padding: 5px;
+    width: 450px;
+}
+
+input {
+    border: 1px solid #000;
+    font-size: 15px;
+    margin: 5px 0;
+    max-width: 100%;
+    padding: 5px;
+    width: 450px;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100px;
+}
+
+button:active, input:focus, textarea:focus {
+    background-color: #fcfcfc;
+}
+
+/* リンク集 */
+.link {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.link figure {
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 284px;
+}
+
+/* フッター */
+footer {
+    background-color: #fff;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    margin: 0 auto;
+    text-align: center;
+    width: 900px;
+}
+
+footer small {
+    font-size: 14px;
+}
+
+.designed, .designed a {
+    color: #ccc;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+/* メディアクエリ */
+@media only screen and (max-width: 900px) {
+    body {
+        padding: 0 10px;
+    }
+    .wrapper {
+        display: block;
+        width: 100%;
+    }
+    nav, nav li a {
+        display: inline;
+        margin: 0;
+        padding: 0 10px;
+        width: 100%;
+    }
+    header, main {
+        display: block;
+        margin: 0;
+        padding: 0 10px;
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+}

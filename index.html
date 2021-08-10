@@ -1,62 +1,192 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Shota Masaki</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="index.html"></a>Shota Masaki</h1>
-        <img src="img/IMG.JPG" width="200" height="200" ></a>
-        <span class="subtitle"></span>
-        
-        <nav>
-          <ul>
-            <li><a href="index.html">ホーム</a></li>
-            <li><a href="about.html">学術活動</a></li>
-            <li><a href="link.html">Link</a></li>
-            <!--コメントアウト
-              <li><a href="diary.html">Diary</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="link.html">Link</a></li>
-            -->
-          </ul>
-        </nav>
-        <a href="index.html"><img src="img/clap.png" width="39" height="11" alt="拍手" title="拍手"></a>
-      </header>
-      <main>
-        <h2>正木翔大</h2>
-        連絡先：masaki{@}mprg.cs.chubu.ac.jp<br>
-        <a href="https://twitter.com/masaki74_s"><img src="img/2021 Twitter logo - blue.png" width="25" height="20"></a>
-        <a href="https://github.com/shota74"><img src="img/github.png" width="25" height="20"></a>
-        <a href="https://signate.jp/users/35737"><img src="img/signate.png" width="25" height="20"></a>
-        
-        <br>
-        <h2>更新履歴</h2>
-        <dl class="new">
-          <dt>2021/08/10</dt><dd>論文リンク追加</dd>
-          <dt>2021/08/09</dt><dd>リンク追加</dd>
-          <dt>2021/08/09</dt><dd>ページ作成</dd>
-        </dl>
-        <h3>自己紹介</h3>
-        中部大学 工学研究科 情報工学専攻 修士課程　<a href="http://mprg.jp/">藤吉・山下研究室：Machine Perception and Robotics Group (MPRG)</a>に所属<br>
-        研究分野は，セマンティックセグメンテーションに関する研究をしています．
-      
-        <h3>経歴</h3>
-        <ul>    
-          <li>2020/4〜 現在　中部大学 工学研究科 情報工学専攻 修士課程</li>
-          <li>2020/4〜 現在　戦略的イノベーション創造プログラム（SIP）</li>
-          <li>2016/4〜2020年3月 中部大学 工学部情 報工学科</li>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Shota Masaki</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Shota Masaki">
+<meta name="keywords" content="正木翔大,正木 翔大">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/fixmenu_pagetop.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function(){
+$('a[href^="#"]').click(function() {
+var speed = 800;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$('body,html').animate({scrollTop:position}, speed, 'swing');
+return false;
+});
+});
+</script>
+</head>
 
-        </ul>
-      
-      </main>
-    </div>
-    <footer>
-      <small>&copy; Shota Masaki <samp class="designed">Designed by <a href="https://hikageishi.websozai.jp" target="_blank">日影石</a></samp></small>
-    </footer>
-  </body>
+<body>
+
+<header>
+<h1 id="logo"><a href="index.html"></a></h1>
+<h2>Shota Masaki</h2>
+<h3>e-mail：masaki{@}mprg.cs.chubu.ac.jp<br></h3>
+<nav id="icon">
+    <ul>
+        <li><a href="https://twitter.com/masaki74_s"><img src="img/2021 Twitter logo - white.png" width="30" height="30" ></a></li>
+        <li><a href="https://twitter.com/masaki74_s"><img src="img/github.png" width="30" height="30"></a></li>
+        <li><a href="https://signate.jp/users/35737"><img src="img/signate.png" width="30" height="30"></a></li>
+    </ul>
+</nav>
+
+<nav id="menubar">
+<ul>
+<li><a href="#new">What's New</a></li>
+<li><a href="#mypage">自己紹介</a></li>
+<li><a href="#service">学術活動</a></li>
+<li><a href="#skill">スキル</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="container">
+
+<div id="contents">
+
+<section id="new">
+
+<h2>What's New</h2>
+<dl>
+<dt>2021/08/10</dt>
+<dd>改修</dd>
+<dt>2021/08/10</dt>
+<dd>論文リンク追加</dd>
+<dt>2021/08/09</dt>
+<dd>リンク追加</dd>
+<dt>2021/08/09</dt>
+<dd>ページ作成</dd>
+</dl>
+
+</section>
+<!--/#new-->
+
+<section id="mypage">
+
+<h2>自己紹介</h2>
+
+<h3>正木翔大</h3>
+<div class="class2">
+    <img src="img/IMG.JPG" width="200" height="200">
+  </div>
+<p>中部大学 工学研究科 情報工学専攻 修士課程　<a href="http://mprg.jp/">藤吉・山下研究室：Machine Perception and Robotics Group (MPRG)</a>に所属.<br>
+    研究分野は，セマンティックセグメンテーションに関する研究をしています．</p>
+    
+<table class="ta1">
+<caption>経歴</caption>
+<tr>
+<th>2020/04〜現在</th>
+<td>中部大学 工学研究科 情報工学専攻 修士課程</td>
+</tr>
+<tr>
+<th>2020/04〜現在</th>
+<td>戦略的イノベーション創造プログラム（SIP）</td>
+</tr>
+<tr>
+<th>2016/04〜2020/03 </th>
+<td>中部大学 工学部 情報工学科</td>
+</tr>
+</table>
+
+</section>
+
+<section id="service">
+<h2>学術活動</h2>
+
+<h3>論文誌</h3>
+<p><li><ins>Shota Masaki</ins>，Tsubasa Hirakawa，Takayoshi Yamashita，Hironobu Fujiyoshi，"Distant Traffic Light Recognition Using Semantic Segmentation"，Transportation Research Record，2021.
+    <a href="https://journals.sagepub.com/doi/10.1177/03611981211016467"><img src="img/ext_link.png" width="15" height="15"></a></li>
+</p>
+
+<h3>国際会議</h3>
+<p><li><ins>Shota Masaki</ins>，Tsubasa Hirakawa，Takayoshi Yamashita，Hironobu Fujiyoshi, "Multi-Domain Semantic-Segmentation Using Multi-Head Model",  IEEE International Intelligent Transportation Systems Conference (ITSC)，2021.</li></p>
+
+<h3>国内会議</h3>
+<p> <li><ins>正木翔大</ins>, 平川翼, 山下隆義, 藤吉弘亘, "Multi Head構造を導入したマルチドメイン・セマンティックセグメンテーション", 画像センシングシンポジウム, 2021.<a href="http://mprg.jp/publications/f20210611_masaki"><img src="img/ext_link.png" width="15" height="15"></a></li>
+    <li>山田裕大, <ins>正木翔大</ins>, 平川翼, 山下隆義, 藤吉弘亘, "運転計測情報を用いたデータ選択と半教師あり学習によるセマンティックセグメンテーション", 画像センシングシンポジウム, 2021.<a href="http://mprg.jp/publications/f20210611_yamada"><img src="img/ext_link.png" width="15" height="15"></a></li>
+    <li><ins>正木翔大</ins>, 後藤圭汰, 平川翼, 山下隆義, 藤吉弘亘, "セマンティックセグメンテーションを用いた信号機認識", ビジョン技術の実利用ワークショップ, 2019.<a href="http://mprg.jp/publications/f20191205_masaki"><img src="img/ext_link.png" width="15" height="15"></a></li></p>
+
+<h3>表彰</h3>
+<p>
+    <li><ins>正木翔大</ins>, 瀬尾俊貴，森優樹，近藤良太，
+    SIGNATE オフロード画像のセグメンテーションチャレンジ（認識精度部門) 1位<a href="https://signate.jp/competitions/109/leaderboard"><img src="img/ext_link.png" width="15" height="15"></a>
+    <br>入賞レポート<a href="https://signate.jp/competitions/101/summary"><img src="img/ext_link.png" width="15" height="15" title="twitter"></a>，
+    SIGNATE Winner's Interview<a href="https://signate.jp/articles/winners-interview-atla-20210602"><img src="img/ext_link.png" width="15" height="15" title="twitter"></a>，
+    コンペ表彰式レポート<a href="https://signate.jp/articles/competition-report-atla-20210609"><img src="img/ext_link.png" width="15" height="15" title="twitter"></a>  
+    </li>
+</p>
+
+<h3>その他</h3>
+<p>
+    <li><a href="https://github.com/machine-perception-robotics-group/MPRGDeepLearningLectureNotebook">MPRG Deep Learning Lecture Notebook</a> PyTorchで作るモダンネットワーク（中級編1）SegNetの作成担当</li>
+</p>
+
+</section>
+<!--/#company-->
+
+<section id="skill">
+<h2>スキル</h2>
+
+<h3>資格</h3>
+<ul class="disc">
+<li>2017/09：IT パスポート</li>
+<li>2018/03：普通自動車免許</li>
+<li>2018/11：画像処理エンジニア検定ベーシック</li>
+<li>2020/08：JDLA Deep Learning for GENERAL 2020#2</li>
+<li>2021/03：JDLA Deep Learning for ENGINEER 2021#1</li>
+</ul>
+
+ <h3>プログラミング</h3>
+ <ul class="disc">
+    <li>Python <br>
+        DeepLearningフレームワーク (Pytorch等)<br>
+    画像処理フレームワーク（OpenCV等）</li>
+    <li>C/C++</li>
+    </ul>
+<h3>使用OS</h3>
+<ul class="disc">
+    <li>macOS</li>
+    <li>Ubuntu</li>
+    <li>Windows</li>
+    </ul>
+
+</section>
+<!--/#service-->
+
+<section id="contact">
+
+<h2>Contact</h2>
+<p class="c">お問い合わせは以下までお願い致します。</p>
+<p class="c"><span>masaki{@}mprg.cs.chubu.ac.jp</span><br>
+</section>
+<!--/#contact-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">Shota Masaki</a> All Rights Reserved.</small>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+</body>
 </html>
